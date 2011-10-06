@@ -25,10 +25,10 @@ else
     setopt extendedglob
     for file in $ZSHRC_HOME/.zsh.d/*(.);
     do
-        echo " `basename $file` ... \c"
+#        echo " `basename $file` ... \c"
         local t=$(date +%s%N)
         source $file
-        echo "[" $(( ($(date +%s%N) - $t) / 1000000)) "ms ]"
+#        echo "[" $(( ($(date +%s%N) - $t) / 1000000)) "ms ]"
     done
 
     __motd

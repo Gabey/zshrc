@@ -5,10 +5,10 @@
 ###################
 
 export GWT_EXTERNAL_BROWSER=/usr/bin/firefox
-export PATH=$PATH:/usr/lib/perl5/vendor_perl/bin/:/opt/java/jre/bin:~/.node/bin/:/home/zero/bin:/opt/android-sdk/platform-tools
+export PATH=$PATH:/usr/lib/perl5/vendor_perl/bin/:/opt/java/jre/bin:~/.node/bin/:/home/mumu/bin:
 
-export EDITOR="emacsclient -c"
-export BROWSER=chromium-browser
+export EDITOR="vimx"
+export BROWSER=firefox
 export GPGKEY=1193ADBC
 export WORDCHARS="_-"
 if [ -x /usr/bin/virtualenvwrapper.sh ]; then
