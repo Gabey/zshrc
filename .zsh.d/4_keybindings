@@ -28,6 +28,9 @@ bindkey "^[[3;3~" kill-word
 bindkey "^[[3;5~" kill-word
 bindkey " " magic-space
 bindkey "^[r" history-incremental-search-forward
+bindkey -s '^H' 'fc -R && rehash\n' # Reload history (so make commands from other shells available) and rehash
+bindkey '\e[A' history-search-backward
+bindkey '\e[B' history-search-forward
 
 case "$TERM" in
     *rxvt*)
