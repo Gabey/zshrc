@@ -32,3 +32,9 @@ export PYTHONSTARTUP="$ZSHRC_HOME/.pythonrc.py"
 
 export LESS='--RAW-CONTROL-CHARS --tabs=8 -r --quiet'
 export LESSOPEN="|  pygmentize %s"
+
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
