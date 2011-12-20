@@ -18,6 +18,7 @@ alias lla='ls -la'
 
 alias c='clear'
 alias s='cd ..'
+alias p='popd'
 
 alias pk='packer --noedit'
 alias py='python2.7'
@@ -52,6 +53,11 @@ alias gsu='git submodule foreach --recursive git submodule update'
 
 alias be='bundle exec'
 alias rake='bundle exec rake'
+alias rspec='bundle exec rspec --drb'
+
+alias dropbox='tsocks dropbox'
+
+alias ts='tsocks'
 
 alias resource='source ~/.zshrc'
 
