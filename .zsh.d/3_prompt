@@ -88,8 +88,8 @@ export RPS1="${rprmpt}"
 padd_prompt() {
   local bprmpt=$bprmpt
   local frprmpt="$(prompt_vc_info) "
-  if [ -n "$rvm_gemset_name" ]; then
-    bprmpt="${__blue}`basename \"$rvm_gemset_name\"` $bprmpt"
+  if [ -n "$rvm_env_string" ]; then
+    bprmpt="${__blue}`basename \"$rvm_env_string\"` $bprmpt"
   fi
   if [ -n "$VIRTUAL_ENV" ]; then
     bprmpt="${__yellow}`basename \"$VIRTUAL_ENV\"` $bprmpt"
