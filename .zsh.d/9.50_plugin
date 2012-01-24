@@ -1,0 +1,21 @@
+#define the list of plugin you want to load
+plugins=(git)
+
+is_plugin() {
+  local base_dir=$1
+  local name=$2
+  test -f $base_dir/plugins/$name/$name.plugin.zsh \
+    || test -f $base_dir/plugins/$name/_$name
+}
+
+# Load and run compinit
+autoload -U compinit
+compinit -i
+
+
+# Load all of the plugins that were defined in ~/.zshrc
+for plugin ($plugins); do
+  if [ -f $ZDOTDIR/.zsh.d/plugins/$plugin/$plugin.plugin.zsh ]; then
+    source $ZDOTDIR/.zsh.d/plugins/$plugin/$plugin.plugin.zsh
+  fi
+done
